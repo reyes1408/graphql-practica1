@@ -6,8 +6,8 @@ const publicationSchema = new mongoose.Schema({
         require: true,
     },
     createDate: {
-        type: Date,
-        default: Date.now
+        type: String,
+        require: true
     },
     likes: {
         type: Number,

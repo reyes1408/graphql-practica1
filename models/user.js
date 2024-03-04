@@ -2,7 +2,7 @@ import mongoose, { Schema } from "mongoose";
 //import mongooseUniqueValidator from "mongoose-unique-validator";
 
 const userSchema = new mongoose.Schema({
-    nameUser: {
+    userName: {
         type: String,
         require: true,
         unique: true,
@@ -18,8 +18,8 @@ const userSchema = new mongoose.Schema({
         minLength: 6
     },
     registerDate: {
-        type: Date,
-        default: Date.now
+        type: String,
+        require: true
     },
     publications: [{
         type: mongoose.Schema.Types.ObjectId,
